@@ -5,6 +5,6 @@ public class CelsiusToFahrenheit {
         System.out.printf("Enter the value in Celsius: ");
         double Celsius = sc.nextInt();
         double Fahrenheit = (Celsius*9/5)+32;
-        System.out.printf("%.2",Fahrenheit);
+        System.out.printf("%.2f",Fahrenheit);
     }
 }
