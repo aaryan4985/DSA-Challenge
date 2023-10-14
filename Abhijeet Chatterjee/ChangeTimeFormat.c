@@ -10,13 +10,13 @@ int main()
     {
         hour = hour + 12;    
     }
-
-    if(minute == 0)
+    if(minute == 0 && hour < 10)
+        printf("\n0%d%d0",hour,minute);
+    else if(minute == 0)
         printf("\n%d%d0",hour,minute);
     else if(hour < 10)
         printf("\n0%d%d",hour,minute);
-    else if(minute == 0 && hour < 10)
-        printf("\n0%d%d0",hour,minute);
+    
     else
         printf("\n%d%d",hour,minute);
     return 0;
